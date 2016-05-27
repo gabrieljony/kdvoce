@@ -1,44 +1,40 @@
-apply plugin: 'com.android.application'
+    apply plugin: 'com.android.application'
 
-android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    android {
+        compileSdkVersion 23
+        buildToolsVersion "23.0.3"
 
-    defaultConfig {
-        applicationId "br.com.kdvoce.application.applicationkdvoce"
-        minSdkVersion 17
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
-        multiDexEnabled true
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        defaultConfig {
+            applicationId "br.com.kdvoce.application.applicationkdvoce"
+            minSdkVersion 17
+            targetSdkVersion 23
+            versionCode 1
+            versionName "1.0"
+            multiDexEnabled true
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+        packagingOptions {
+            exclude 'META-INF/ASL2.0'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/license.txt'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/notice.txt'
         }
     }
-    packagingOptions {
-        exclude 'META-INF/ASL2.0'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/license.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/notice.txt'
-    }
-}
 
-dependencies {
-    compile 'com.android.support:multidex:1.0.0'
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.android.support:design:23.3.0'
-    compile 'com.google.android.gms:play-services:8.4.0'
-    /*compile 'com.google.android.gms:play-services-identity:8.4.0'
-    compile 'com.google.android.gms:play-services-plus:8.4.0'
-    compile 'com.google.android.gms:play-services-gcm:8.4.0'
-    compile 'com.google.android.gms:play-services-maps:8.4.0'*/
-    compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.3.2'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-}
+    dependencies {
+        compile 'com.android.support:multidex:1.0.0'
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:appcompat-v7:23.3.0'
+        compile 'com.android.support:design:23.3.0'
+        compile 'com.google.android.gms:play-services:8.4.0'
+        compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.3.2'
+        compile 'com.squareup.picasso:picasso:2.5.2'
+    }

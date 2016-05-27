@@ -13,8 +13,16 @@
     <TextView
         android:layout_marginLeft="4dp"
         android:gravity="center"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@null"
-        android:id="@+id/txtNomeContato"/>
+        android:id="@+id/txtNomeContato"
+        android:layout_weight="1"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:id="@+id/checkBox" />
+
 </LinearLayout>
