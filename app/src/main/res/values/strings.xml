@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">KdVoce</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="action_settings">Atualiza</string>
+    <string name="title_activity_fragment">Fragment</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+
+    <string name="google_app_id">kdvoce-3caea</string>
+    <string name="dialog_fire_missiles">Kdvoce!</string>
+    <string name="fire">Kdvoce!</string>
+    <string name="cancel">Cancel</string>
+
+</resources>
